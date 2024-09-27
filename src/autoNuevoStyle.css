@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.scrollContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column; 
+    height: auto;
+    gap: 10px;
+}
+
+.titleContainer {
+    background-color: #229799;
+    height: 100px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.titleInfoContainer {
+    width: auto;
+    height: auto; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #F5F5F5;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    color: #229799;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contentContainer {
+    display: flex;
+    margin: 10px;
+}
+
+
+/*Filtro de autos nuevos*/
+.filterContainer {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #DDD;
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    height: fit-content;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #424242;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+select {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    color: #424242;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+    background-color: #229799;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #1b7f7b;
+    color: rgba(255, 255, 255, 0.737);
+}
+
+
+/*Parte de marcas*/
+.marcaLogoContainer {
+    width: 70%; 
+    justify-content: center;
+}
+
+.logoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.logoImagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logoTitle {
+    font-size: 16px;
+    color: #424242;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (max-width: 480px) {
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marcaLogoContainer {
+        width: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
