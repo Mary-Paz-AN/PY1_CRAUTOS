@@ -1,6 +1,8 @@
 import React from 'react';
 import './autoNuevoStyle.css';
 import FiltroAutosNuevos from './filtroAutoNuevo';
+import BarraSuperior from './BarraSuperior';
+import BarraInferior from './BarraInferior';
 
 // Componente funcional de React para mostrar autos nuevos
 const AutosNuevos = () => {
@@ -8,6 +10,7 @@ const AutosNuevos = () => {
 
   return (
     <div className='scrollConteiner'>
+      <BarraSuperior/>
       <div className='mainContainer'>
         <div className='titleContainer'>
           <h1>Autos Nuevos</h1>
@@ -214,6 +217,7 @@ const AutosNuevos = () => {
 
         </div>
       </div>
+      <BarraInferior/>
     </div>
   );
 };

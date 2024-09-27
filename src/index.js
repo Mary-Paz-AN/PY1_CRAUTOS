@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';  // Importar BrowserRouter
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import AutosNuevos from './autosNuevos'
 import reportWebVitals from './reportWebVitals';
+import Inicio from './Inicio';
+import AutosNuevos from "./autosNuevos"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
     <BrowserRouter>  {/* Envuelve tu aplicación en BrowserRouter */}
-      <App />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/AutosNuevos" element={<AutosNuevos />} />
+      </Routes>
     </BrowserRouter>
-=======
-    <AutosNuevos />
->>>>>>> 62f0973c86268a36f2a8f6265dc30c474388579e
   </React.StrictMode>
 );
 
