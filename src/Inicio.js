@@ -1,10 +1,9 @@
-import './Inicio.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Container } from 'react-bootstrap';
+import {Container } from 'react-bootstrap';
 import carrusel1 from "./imagenes/Carrusel1.png"
 import carrusel2 from "./imagenes/Carrusel2.png"
 import carrusel3 from "./imagenes/Carrusel3.png"
@@ -16,6 +15,7 @@ import convertible from "./imagenes/CarroceriaConvertible.png"
 import suv from "./imagenes/CarroceriaSUV.png"
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
+import './Inicio.css';
 
 function Inicio() {
   return (
@@ -59,41 +59,41 @@ function Inicio() {
         <h2 className="text-center">Tipos de Carrocería</h2>
         <Row className="justify-content-center">
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={sedan} alt="Sedán" className="img-fluid custom-image" />
-              <p>Sedán</p>
+              <p className='textGrid'>Sedán</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={suv} alt="SUV" className="img-fluid custom-image" />
-              <p>SUV</p>
+              <p className='textGrid'>SUV</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={pickup} alt="Pick-up" className="img-fluid custom-image" />
-              <p>Pick-up</p>
+              <p  className='textGrid'>Pick-up</p>
             </button>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={coupe} alt="Coupe" className="img-fluid custom-image" />
-              <p>Coupe</p>
+              <p className='textGrid'>Coupe</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={convertible} alt="Convertible" className="img-fluid custom-image" />
-              <p>Convertible</p>
+              <p className='textGrid'>Convertible</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button>
+            <button className='buttonGrid'>
               <img src={hatchback} alt="Hatchback" className="img-fluid custom-image" />
-              <p>Hatchback</p>
+              <p className='textGrid'>Hatchback</p>
             </button>
           </Col>
         </Row>

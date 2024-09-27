@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Inicio from './Inicio';
 import AutosNuevos from "./autosNuevos"
+import Inicio from './Inicio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
