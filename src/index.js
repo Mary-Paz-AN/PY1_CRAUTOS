@@ -7,6 +7,8 @@ import AutosNuevos from "./autosNuevos"
 import AutosPremium from "./autosPremium"
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
+import Registrarse from './Registrarse';
+import Ingresar from './Ingresar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +19,8 @@ root.render(
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
         <Route path="/Contactenos" element={<Contactenos />} />
+        <Route path="/Registrarse" element={<Registrarse />} />
+        <Route path="/Ingresar" element={<Ingresar />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
