@@ -1,6 +1,7 @@
 import React from 'react';
 import './autoNuevoStyle.css';
-import FiltroAutosNuevos from './filtroAutoNuevo';
+import './Logos.css';
+import FiltroAutosNuevos from './FiltroAutoNuevo';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
@@ -13,11 +14,11 @@ const AutosNuevos = () => {
       <BarraSuperior/>
       <div className='mainContainer'>
         <div className='titleContainer'>
-          <h1>Autos Nuevos</h1>
+          <h1 className='h1Style'>Autos Nuevos</h1>
         </div>
-        <h2>
+        <h2 className='h2Style'>
           Descubre información detallada, opciones de financiamiento y características de las principales marcas de autos nuevos.
-          Explora diferentes modelos y elige el que mejor se adapte a tus expectativas.
+          Explore diferentes modelos y elige el que mejor se adapte a sus expectativas.
         </h2>
 
         <div className='contentContainer'>
@@ -204,7 +205,7 @@ const AutosNuevos = () => {
               {/*Volvo */}
               <div className='logo'>
                 <img src='/logosMarcas/volvo.png' alt='Logo de Volvo' className='logoImagen'/>
-                <h3 className='logoTitle'>VolvoV</h3>
+                <h3 className='logoTitle'>Volvo</h3>
               </div>
               {/*ZNA */}
               <div className='logo'>

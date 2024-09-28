@@ -59,7 +59,7 @@ function Contactenos() {
       <div className="container-contact">
         {/* Información de contacto */}
         <div className="info-contacto">
-          <h2>Información de contacto</h2>
+          <h2 className="title-estilo ">Información de contacto</h2>
           <p>Si desea contactarnos, ya sea porque necesita ayuda utilizando nuestro sitio, o necesita cualquier otra información, por favor no dude en llamarnos o enviarnos un mensaje. Nuestras ejecutivas de soporte están disponibles y capacitadas para asistir a nuestros usuarios en lo que sea necesario.</p>
           <p><strong>Email:</strong> soporte@crautos.com</p>
           <p><strong>Telefono:</strong> 2291-4141</p>
@@ -69,7 +69,7 @@ function Contactenos() {
 
         {/* Formulario de contacto */}
         <form className="form-contact" onSubmit={handleSubmit}>
-          <h2>Contáctenos</h2>
+          <h2 className="title-estilo ">Contáctenos</h2>
 
           <div className="form-group">
             <label>Nombre:</label>

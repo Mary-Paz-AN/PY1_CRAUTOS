@@ -69,6 +69,15 @@ max-width: none; /* Elimina el límite del ancho */
 max-height: none; /* Elimina el límite de la altura */
 }
 
+.text-center {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
 .text-image {
 font-size: 1.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
 }
@@ -139,6 +148,9 @@ max-height: 100%; /* Limitar el tamaño */
 
 .textGrid{
     color: #229799;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
 }
 
 /* Media queries solo para dispositivos móviles */
@@ -184,11 +196,6 @@ max-height: 100%; /* Limitar el tamaño */
     width: 80vw !important; /* Ocupa el 80% del ancho en móviles */
     margin: 0 auto !important; /* Centrar la imagen horizontalmente */
     max-height: none !important; /* Sin altura máxima para móviles */
-}
-
-.text-center {
-    justify-content: center;
-    align-items: center;
 }
 
 .custom-carousel {

@@ -1,32 +1,50 @@
 import React, { useState } from 'react';
 import './Filtro.css';
 
-const FiltroAutosNuevos = () => {
-  // Estados para cada opción seleccionada
-  const [marca, setMarca] = useState('');
-  const [modelo, setModelo] = useState('');
-  const [combustible, setCombustible] = useState('');
-  const [transmision, setTransmision] = useState('');
-  const [puertas, setPuertas] = useState('');
-  const [año, setAño] = useState('');
+const FiltroAutosPremium = () => {
+    // Estados para cada opción seleccionada
+    const [origen, setOrigen] = useState('');
+    const [marca, setMarca] = useState('');
+    const [modelo, setModelo] = useState('');
+    const [combustible, setCombustible] = useState('');
+    const [transmision, setTransmision] = useState('');
+    const [puertas, setPuertas] = useState('');
+    const [año, setAño] = useState('');
+    const [precioDesde, setPrecioDesde] = useState('');
+    const [precioHasta, setPrecioHasta] = useState('');
 
-  // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
-  const marcas = ['Toyota', 'Honda', 'Ford'];
-  const modelos = ['Corolla', 'Civic', 'Mustang'];
-  const combustibles = ['Gasolina', 'Diesel', 'Eléctrico'];
-  const transmisiones = ['Manual', 'Automática'];
-  const puertasOptions = [2, 4];
-  const años = [2022, 2023, 2024];
+    // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
+    const origenes = ['Agencia', 'Particular']
+    const marcas = ['Toyota', 'Honda', 'Ford'];
+    const modelos = ['Corolla', 'Civic', 'Mustang'];
+    const combustibles = ['Gasolina', 'Diesel', 'Eléctrico'];
+    const transmisiones = ['Manual', 'Automática'];
+    const puertasOptions = [2, 4];
+    const años = [2022, 2023, 2024];
 
-  // Función para manejar los cambios en los select
-  const handleChange = (setter) => (event) => {
-    setter(event.target.value);
-  };
+    // Función para manejar los cambios en los select y input
+    const handleChange = (setter) => (event) => {
+        setter(event.target.value);
+    };
 
   return (
     <div className="filterContainer">
       <h2 className='title'>Filtrar Autos</h2>
       <form>
+        {/* Origen */}
+        <label className='labelStyle'>
+          Origen:
+          <select className='selectStyle' value={origen} onChange={handleChange(setOrigen)}>
+            <option value="">Selecciona el origen</option>
+            {origenes.map((origen) => (
+              <option key={origen} value={origen}>
+                {origen}
+              </option>
+            ))}
+          </select>
+        </label>
+        <br />
+
         {/* Marca */}
         <label className='labelStyle'>
           Marca:
@@ -111,6 +129,35 @@ const FiltroAutosNuevos = () => {
         </label>
         <br />
 
+        {/* Precio */}
+        <label className='labelStyle' style={{fontSize: '16px'}}> 
+            Precio
+        </label>
+        {/* Desde */}
+        <label className='labelStyle'>
+            Desde:
+            <input 
+                type="number" 
+                className='inputStyle' 
+                value={precioDesde} 
+                onChange={handleChange(setPrecioDesde)} 
+                placeholder="Precio desde"
+            />
+        </label>
+
+        {/* Hasta */}
+        <label className='labelStyle'>
+            Hasta:
+            <input 
+                type="number" 
+                className='inputStyle' 
+                value={precioHasta} 
+                onChange={handleChange(setPrecioHasta)} 
+                placeholder="Precio hasta"
+            />
+        </label>
+        <br />
+
         {/* Botón para aplicar el filtro */}
         <button className='buttonStyle' type="submit">Buscar</button>
       </form>
@@ -118,4 +165,4 @@ const FiltroAutosNuevos = () => {
   );
 };
 
-export default FiltroAutosNuevos;
+export default FiltroAutosPremium;
