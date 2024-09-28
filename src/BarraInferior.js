@@ -14,7 +14,7 @@ function BarraInferior() {
           {'© '} CRAUTOS {new Date().getFullYear()} {' '}
         </Typography>
         <Typography variant="body2" color="#B0BEC5" align="center" style={{ marginTop: '10px' }}>
-          Contáctenos: <Link href="mailto:info@crautos.com" color="#FFFFFF">info@crautos.com</Link>
+          Contáctenos: <Link href="mailto:soporte@crautos.com" color="#FFFFFF">soporte@crautos.com</Link>
         </Typography>       
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
           <Link href="https://www.facebook.com" target="_blank" color="inherit" style={{ margin: '0 10px' }}>
