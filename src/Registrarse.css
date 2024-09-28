@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .container-register {
     display: flex;
     flex-direction: column;
@@ -12,6 +14,9 @@
     width: 100%;
     margin-bottom: 20px;
     transition: 1s ease;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
   }
   
   .btn-toggle-left {
@@ -26,6 +31,9 @@
     transition: transform 0.3s ease;
     border-top-left-radius: 2vh;
     border-bottom-left-radius: 2vh;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
   }
 
   .btn-toggle-right {
@@ -40,6 +48,9 @@
     border-top-right-radius: 2vh;
     border-bottom-right-radius: 2vh;
     transition: transform 0.3s ease;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
   }
 
   .btn-toggle-right:hover{
@@ -66,6 +77,7 @@
     width: 40vw;
     height: 50vh;
     overflow: auto;
+    margin-top: 30px;
   }
   
   .full-register, .quick-register {
@@ -82,6 +94,9 @@
     width: 15vh;
     height: auto;
     font-size: 2vh;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
 
   .btn-google
@@ -109,6 +124,10 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     justify-content: center;
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
   }
 
   .form-group-register {
@@ -116,6 +135,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
 
   .form-group-registers input,

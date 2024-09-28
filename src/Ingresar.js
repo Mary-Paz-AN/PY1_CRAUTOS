@@ -25,7 +25,7 @@ function Ingresar() {
       
       <div className="login-container">
         <form onSubmit={handleSubmit} className="login-form">
-          <h2>Iniciar Sesión</h2>
+          <h2 className="title-font" >Iniciar Sesión</h2>
           
           <div className="form-group">
             <label>Correo electrónico:</label>

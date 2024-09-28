@@ -80,6 +80,9 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
 }
 
 .btn-enviar:hover {

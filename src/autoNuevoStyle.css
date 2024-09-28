@@ -47,7 +47,7 @@ body {
 }
 
 .h1Style {
-    color: #424242;
+    color: #212529;
     margin-top: 35px;
     text-align: center;
     font-size: 30px;
@@ -57,7 +57,7 @@ body {
 }
 
 .h2Style {
-    color: #424242;
+    color: #212529;
     font-size: 18px;
     text-align: center;
     margin-top: 20px;
@@ -69,7 +69,7 @@ body {
 }
 
 .title {
-    color: #229799;
+    color: #212529;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
