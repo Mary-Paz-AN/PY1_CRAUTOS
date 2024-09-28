@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import './Autos.css';
 import BarraSuperior from "./BarraSuperior";
 import BarraInferior from "./BarraInferior";
 import "./Contactenos.css"; // Importamos el CSS
@@ -9,6 +11,12 @@ function Contactenos() {
   const [telefono, setTelefono] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+
+  const irInicio = () => {
+    navigate('/');
+  };
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -55,6 +63,8 @@ function Contactenos() {
   return (
     <div className="screen">
       <BarraSuperior />
+
+      <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
 
       <div className="container-contact">
         {/* Información de contacto */}

@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AutosNuevos from "./autosNuevos"
-import AutosPremium from "./autosPremium"
+import AutosNuevos from "./autosNuevos";
+import AutosNuevosModelos from "./autosNuevosModelos"
+import AutosPremium from "./autosPremium";
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
 import Registrarse from './Registrarse';
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
+        <Route path="/AutosNuevosModelos" element={<AutosNuevosModelos />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />

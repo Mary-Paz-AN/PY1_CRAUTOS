@@ -1,4 +1,6 @@
 import React, { useState } from "react"; 
+import { useNavigate } from 'react-router-dom';
+import './Autos.css';
 import BarraSuperior from "./BarraSuperior";
 import BarraInferior from "./BarraInferior";
 import "./Registrarse.css";
@@ -21,6 +23,12 @@ function Registrarse() {
   const [telefono, setTelefono] = useState("");
   const [error, setError] = useState("");
   const [esRegistroCompleto, setEsRegistroCompleto] = useState(true);
+
+  const navigate = useNavigate();
+
+  const irInicio = () => {
+    navigate('/');
+  };
 
   const provinciasCR = [
     "San José",
@@ -59,6 +67,8 @@ function Registrarse() {
   return (
     <div className="screen">
       <BarraSuperior />
+      <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
+
       <h1 className="text-tittle">Registrarse</h1>
       <div className="container-register">
 
