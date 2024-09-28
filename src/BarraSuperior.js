@@ -19,6 +19,10 @@ function BarraSuperior() {
     navigate('/Contactenos');
   };
 
+  const irRegistrarse = () => {
+    navigate('/Registrarse');
+  };
+
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
@@ -34,7 +38,7 @@ function BarraSuperior() {
             <Nav.Link href="#libro-azul" className="nav-link">Libro Azul</Nav.Link>
             <Nav.Link href="#simular-financiamiento" className="nav-link">Simular Financiamiento</Nav.Link>
             <Nav.Link onClick={irContactenos} className="nav-link">Contáctenos</Nav.Link>
-            <Nav.Link href="#registrarse" className="nav-link">Registrarse</Nav.Link>
+            <Nav.Link onClick={irRegistrarse} className="nav-link">Registrarse</Nav.Link>
             <Nav.Link href="#ingresar" className="nav-link">Ingresar</Nav.Link>
           </Nav>
         </Navbar.Collapse>
