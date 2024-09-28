@@ -1,0 +1,83 @@
+ .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Este contenedor crecerá para ocupar el espacio disponible */
+    padding: 20px;
+  }
+  
+  .login-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Más ancho para pantallas grandes */
+    max-width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .btn-login, .btn-google {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .btn-login {
+    background-color: #229799;
+    color: white;
+  }
+  
+  .btn-google {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-google:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .login-form {
+      width: 90%; /* Ajuste para pantallas pequeñas */
+    }
+  
+    .btn-login, .btn-google {
+      padding: 10px;
+    }
+  
+    .form-group input {
+      padding: 8px;
+    }
+  }
+  

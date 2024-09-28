@@ -39,6 +39,10 @@ function BarraSuperior() {
     navigate('/Registrarse');
   };
 
+  const Ingresar = () => {
+    navigate('/Ingresar');
+  };
+
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
@@ -56,7 +60,7 @@ function BarraSuperior() {
             <p className="nav-link">{isSmallScreen ? '⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯' : '|'}</p> {/* Aquí cambia el símbolo */}
             <Nav.Link onClick={irContactenos} className="nav-link">Contáctenos</Nav.Link>
             <Nav.Link onClick={irRegistrarse} className="nav-link">Registrarse</Nav.Link>
-            <Nav.Link href="#ingresar" className="nav-link">Ingresar</Nav.Link>
+            <Nav.Link onClick={Ingresar} className="nav-link">Ingresar</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
