@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AutosNuevos from "./autosNuevos"
 import Inicio from './Inicio';
+import Contactenos from './Contactenos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
+        <Route path="/Contactenos" element={<Contactenos />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

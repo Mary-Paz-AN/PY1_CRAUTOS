@@ -1,0 +1,97 @@
+.screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Contenedor principal para la página de contacto */
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustado para separarse correctamente */
+    height: fit-content;
+    padding: 20px;
+}
+
+/* Información de contacto */
+.info-contacto {
+    flex: 1 1 40%;
+    padding: 10px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Formulario de contacto */
+.form-contact {
+    flex: 1 1 50%;
+    padding: 10px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Botón de enviar */
+.btn-enviar {
+    background-color: #229799;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #1a7a7a;
+}
+
+/* Estilos para los errores */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Línea divisoria */
+.divider {
+    width: 2px;
+    background-color: #ccc;
+    height: auto;
+    align-self: stretch; /* Para que la línea se extienda en toda la altura del contenedor */
+}
+
+/* Adaptabilidad (responsive design) */
+@media (max-width: 768px) {
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .info-contacto,
+    .form-contact {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .divider {
+        display: none;
+    }
+}

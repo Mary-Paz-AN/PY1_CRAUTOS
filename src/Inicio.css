@@ -96,8 +96,8 @@ height: 20vh;
 .buttonGrid {
 display: flex; /* Usar flexbox para centrar el contenido */
 flex-direction: column; /* Apilar la imagen y el texto verticalmente */
-align-items: center; /* Centrar horizontalmente el contenido */
-justify-content: center; /* Centrar verticalmente el contenido */
+align-items:center; /* Centrar horizontalmente el contenido */
+justify-content:space-between; /* Centrar verticalmente el contenido */
 width: 20vw; /* Asegura que el botón ocupe todo el ancho del contenedor */
 height: auto; /* Altura fija para todos los botones */
 background: none !important; /* Sin fondo para evitar el efecto de color */
@@ -114,11 +114,11 @@ object-fit: cover; /* Asegura que la imagen llene el espacio sin distorsionarse 
 transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
 }
 
-button:hover .custom-image {
+.buttonGrid:hover .custom-image {
 transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
 }
 
-button p {
+.buttonGrid p {
 margin-top: 10px; /* Espacio superior para el texto */
 font-weight: bold; /* Texto en negrita */
 }
@@ -138,58 +138,65 @@ max-height: 100%; /* Limitar el tamaño */
 }
 
 .textGrid{
-    color: #229799 !important;
+    color: #229799;
 }
 
 /* Media queries solo para dispositivos móviles */
 @media (max-width: 768px) {
 .custom-carousel {
-    width: 100vw; /* Carrusel ocupa el ancho completo de la pantalla móvil */
-    height: 10vh; /* Ajusta la altura para pantallas móviles */
-    margin-top: 2vh; /* Reducir el margen superior en móviles */
+    width: 100vw !important; /* Carrusel ocupa el ancho completo de la pantalla móvil */
+    height: 10vh !important; /* Ajusta la altura para pantallas móviles */
+    margin-top: 2vh !important; /* Reducir el margen superior en móviles */
 }
 
 .custom-carousel .carousel-item img {
-    object-fit: contain; /* La imagen se mantiene sin recortes */
-    width: 100%; /* Ocupar el ancho completo */
-    height: auto; /* Dejar que la altura se ajuste automáticamente */
+    object-fit: contain !important; /* La imagen se mantiene sin recortes */
+    width: 100% !important; /* Ocupar el ancho completo */
+    height: auto !important; /* Dejar que la altura se ajuste automáticamente */
 }
 
 .carousel-caption-custom {
-    font-size: 1rem; /* Ajusta el tamaño de la fuente para móviles */
-    bottom: 10%; /* Ajusta la posición en dispositivos móviles */
+    font-size: 1rem !important; /* Ajusta el tamaño de la fuente para móviles */
+    bottom: 10% !important; /* Ajusta la posición en dispositivos móviles */
 }
 
 .carrocerias-grid {
-    grid-template-columns: 1fr; /* Cambiar a una columna en pantallas muy pequeñas */
+    grid-template-columns: 1fr !important; /* Cambiar a una columna en pantallas muy pequeñas */
 }
+
+.buttonGrid {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Apilar la imagen y el texto verticalmente */
+    align-items:center; /* Centrar horizontalmente el contenido */
+    justify-content:center; /* Centrar verticalmente el contenido */
+    width: 90vw; /* Asegura que el botón ocupe todo el ancho del contenedor */
+    height: auto; /* Altura fija para todos los botones */
+    background: none !important; /* Sin fondo para evitar el efecto de color */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    }
+    
 }
 
 /* Estilo para pantallas pequeñas */
 @media (max-width: 576px) {
 .custom-image {
-    width: 80%; /* Ocupa el 80% del ancho en móviles */
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
-    max-height: none; /* Sin altura máxima para móviles */
-}
-
-/* Ajustes para el botón de hamburguesa */
-.navbar-toggler {
-    width: auto; /* Ajustar el ancho del botón de hamburguesa */
-    height: auto; /* Ajustar la altura del botón de hamburguesa */
-    padding: 10px; /* Añadir un poco de relleno */
+    width: 80vw !important; /* Ocupa el 80% del ancho en móviles */
+    margin: 0 auto !important; /* Centrar la imagen horizontalmente */
+    max-height: none !important; /* Sin altura máxima para móviles */
 }
 
 .text-center {
-    padding: 10px; /* Añadir espaciado entre las columnas */
+    justify-content: center;
+    align-items: center;
 }
 
 .custom-carousel {
-    height: 40vh; /* Reducir aún más la altura en pantallas muy pequeñas */
+    height: 40vh !important; /* Reducir aún más la altura en pantallas muy pequeñas */
 }
 
 .carousel-caption-custom {
-    font-size: 0.7rem; /* Ajuste del tamaño de texto para pantallas muy pequeñas */
-    bottom: 5px; /* Ajustar la posición en pantallas pequeñas */
+    font-size: 0.7rem !important; /* Ajuste del tamaño de texto para pantallas muy pequeñas */
+    bottom: 5px !important; /* Ajustar la posición en pantallas pequeñas */
 }
 }

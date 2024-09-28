@@ -15,6 +15,10 @@ function BarraSuperior() {
     navigate('/AutosNuevos');
   };
 
+  const irContactenos = () => {
+    navigate('/Contactenos');
+  };
+
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
@@ -29,7 +33,7 @@ function BarraSuperior() {
             <Nav.Link href="#usados-premium" className="nav-link">Usados Premium</Nav.Link>
             <Nav.Link href="#libro-azul" className="nav-link">Libro Azul</Nav.Link>
             <Nav.Link href="#simular-financiamiento" className="nav-link">Simular Financiamiento</Nav.Link>
-            <Nav.Link href="#contactenos" className="nav-link">Contáctenos</Nav.Link>
+            <Nav.Link onClick={irContactenos} className="nav-link">Contáctenos</Nav.Link>
             <Nav.Link href="#registrarse" className="nav-link">Registrarse</Nav.Link>
             <Nav.Link href="#ingresar" className="nav-link">Ingresar</Nav.Link>
           </Nav>
