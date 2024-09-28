@@ -9,7 +9,7 @@
 .container-contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ajustado para separarse correctamente */
+    justify-content: space-around; /* Ajustado para separarse correctamente */
     height: fit-content;
     padding: 20px;
 }
