@@ -9,18 +9,20 @@ const FiltroAutosPremium = () => {
     const [combustible, setCombustible] = useState('');
     const [transmision, setTransmision] = useState('');
     const [puertas, setPuertas] = useState('');
-    const [año, setAño] = useState('');
+    const [añoDesde, setAñoDesde] = useState('');
+    const [añoHasta, setAñoHasta] = useState('');
     const [precioDesde, setPrecioDesde] = useState('');
     const [precioHasta, setPrecioHasta] = useState('');
 
     // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
     const origenes = ['Agencia', 'Particular']
-    const marcas = ['Toyota', 'Honda', 'Ford'];
+    const marcas = ['Audi', 'Bentley', 'BMW', 'Jaguar', 'Land Rover', 'Lexus', 'Maserati', 'Mercedes Benz', 'Mini Cooper', 'Porsche', 'Volvo'];
     const modelos = ['Corolla', 'Civic', 'Mustang'];
-    const combustibles = ['Gasolina', 'Diesel', 'Eléctrico'];
+    const combustibles = ['Gasolina', 'Diesel', 'Eléctrico', 'Hibrido'];
     const transmisiones = ['Manual', 'Automática'];
-    const puertasOptions = [2, 4];
-    const años = [2022, 2023, 2024];
+    const puertasOptions = [2, 3, 4];
+    const añosDesde = [2020, 2021, 2022, 2023, 2024];
+    const añosHasta = [2020, 2021, 2022, 2023, 2024];
 
     // Función para manejar los cambios en los select y input
     const handleChange = (setter) => (event) => {
@@ -114,15 +116,32 @@ const FiltroAutosPremium = () => {
           </select>
         </label>
         <br />
-
+          
         {/* Año */}
+        <label className='labelStyle' style={{fontSize: '16px'}}> 
+          Año
+        </label>
+        {/* Desde */}
         <label className='labelStyle'>
-          Año:
-          <select className='selectStyle' value={año} onChange={handleChange(setAño)}>
-            <option value="">Selecciona el año</option>
-            {años.map((año) => (
-              <option key={año} value={año}>
-                {año}
+          Desde:
+          <select className='selectStyle' value={añoDesde} onChange={handleChange(setAñoDesde)}>
+            <option value="">Año desde</option>
+            {añosDesde.map((añoDesde) => (
+              <option key={añoDesde} value={añoDesde}>
+                {añoDesde}
+              </option>
+            ))}
+          </select>
+        </label>
+        
+        {/* Hasta */}
+        <label className='labelStyle'>
+          Hasta:
+          <select className='selectStyle' value={añoHasta} onChange={handleChange(setAñoHasta)}>
+            <option value="">Año hasta</option>
+            {añosHasta.map((añoHasta) => (
+              <option key={añoHasta} value={añoHasta}>
+                {añoHasta}
               </option>
             ))}
           </select>

@@ -11,12 +11,33 @@ const FiltroAutosNuevos = () => {
   const [año, setAño] = useState('');
 
   // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
-  const marcas = ['Toyota', 'Honda', 'Ford'];
+  const marcas = [
+    'Toyota',
+    'Honda',
+    'Ford',
+    'Chevrolet',
+    'BMW',
+    'Mercedes-Benz',
+    'Audi',
+    'Volkswagen',
+    'Nissan',
+    'Hyundai',
+    'Kia',
+    'Mazda',
+    'Subaru',
+    'Jeep',
+    'Lexus',
+    'Porsche',
+    'Ferrari',
+    'Lamborghini',
+    'Jaguar',
+    'Tesla'
+  ];
   const modelos = ['Corolla', 'Civic', 'Mustang'];
-  const combustibles = ['Gasolina', 'Diesel', 'Eléctrico'];
+  const combustibles = ['Gasolina', 'Diesel', 'Eléctrico','Hibrido'];
   const transmisiones = ['Manual', 'Automática'];
-  const puertasOptions = [2, 4];
-  const años = [2022, 2023, 2024];
+  const puertasOptions = [2, 3, 4];
+  const años = [2020, 2021, 2022, 2023, 2024];
 
   // Función para manejar los cambios en los select
   const handleChange = (setter) => (event) => {
