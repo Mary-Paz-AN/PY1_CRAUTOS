@@ -132,20 +132,6 @@ margin-top: 10px; /* Espacio superior para el texto */
 font-weight: bold; /* Texto en negrita */
 }
 
-.navbar-toggler {
-width: 40px; /* Tamaño fijo */
-height: 40px; /* Tamaño fijo */
-padding: 0; /* Sin relleno */
-border: none; /* Sin borde */
-}
-
-.navbar-toggler-icon {
-width: 100%; /* Ocupa el 100% del botón */
-height: auto; /* Mantiene la proporción */
-max-width: 100%; /* Limitar el tamaño */
-max-height: 100%; /* Limitar el tamaño */
-}
-
 .textGrid{
     color: #229799;
     font-family: "Roboto", sans-serif !important;

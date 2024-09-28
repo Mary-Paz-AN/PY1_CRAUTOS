@@ -78,7 +78,7 @@ function Registrarse() {
         <div className="register-forms">
           {esRegistroCompleto ? (
             <div className="full-register">
-              <h2>Registro Completo</h2>
+              <h2 className="text-tittle">Registro Completo</h2>
               <form onSubmit={handleSubmitComplete} className="form-register">
                 <div className="form-group-register">
                   <label>Correo electrónico:</label>
@@ -212,7 +212,7 @@ function Registrarse() {
             </div>
           ) : (
             <div className="quick-register">
-              <h2>Registro Rápido</h2>
+              <h2 className="text-tittle">Registro Rápido</h2>
               <form onSubmit={handleSubmitQuick} className="form-register">
                 <div className="form-group-register">
                   <label>Correo electrónico:</label>

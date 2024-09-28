@@ -53,7 +53,7 @@ function BarraSuperior() {
             <Nav.Link onClick={irAutosPremium} href="#usados-premium" className="nav-link">Usados Premium</Nav.Link>
             <Nav.Link href="#libro-azul" className="nav-link">Libro Azul</Nav.Link>
             <Nav.Link href="#simular-financiamiento" className="nav-link">Simular Financiamiento</Nav.Link>
-            <p className="nav-link">{isSmallScreen ? '⎯' : '|'}</p> {/* Aquí cambia el símbolo */}
+            <p className="nav-link">{isSmallScreen ? '⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯' : '|'}</p> {/* Aquí cambia el símbolo */}
             <Nav.Link onClick={irContactenos} className="nav-link">Contáctenos</Nav.Link>
             <Nav.Link onClick={irRegistrarse} className="nav-link">Registrarse</Nav.Link>
             <Nav.Link href="#ingresar" className="nav-link">Ingresar</Nav.Link>

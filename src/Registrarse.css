@@ -1,8 +1,8 @@
 .container-register {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     height: min-content;
   }
   
@@ -92,6 +92,7 @@
     height: auto;
     background-color: transparent !important;
     transition: transform 0.3s ease;
+    border: transparent !important;
   }
 
   .btn-google:hover{
@@ -104,8 +105,10 @@
   }
 
   .text-tittle{
+    display: flex;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    justify-content: center;
   }
 
   .form-group-register {
