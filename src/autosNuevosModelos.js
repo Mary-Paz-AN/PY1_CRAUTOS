@@ -6,7 +6,7 @@ import AudiNuevos from './audiNuevo';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
-// Componente funcional de React para mostrar autos nuevos
+// Componente funcional de React para mostrar autos nuevosA
 const AutosNuevosModelos = () => {
   const navigate = useNavigate();
 
