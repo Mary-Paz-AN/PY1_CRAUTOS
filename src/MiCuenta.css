@@ -1,0 +1,64 @@
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar button {
+  padding: 10px;
+  background-color: #229799;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  width: 75%;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 2px solid #f2f2f2;
+}
+
+.tittle-option{
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+
+  .sidebar {
+      width: 100%; /* La barra lateral ocupa todo el ancho */
+      border-bottom: 2px solid #f2f2f2; /* Añade un borde inferior para separación */
+  }
+
+  .main-content {
+      width: 100%; /* La parte principal también ocupa todo el ancho */
+      border-left: none; /* Elimina el borde izquierdo en pantallas pequeñas */
+      padding: 10px; /* Ajusta el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar button {
+      padding: 8px; /* Reduce el tamaño del botón en pantallas muy pequeñas */
+      font-size: 14px; /* Ajusta el tamaño de fuente */
+  }
+
+  .main-content {
+      padding: 5px; /* Reduce el padding en pantallas muy pequeñas */
+  }
+}

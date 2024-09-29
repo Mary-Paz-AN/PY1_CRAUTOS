@@ -1,0 +1,42 @@
+.div-principal{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mi-informacion {
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .guardar-cambios {
+    padding: 10px 15px;
+    background-color: #229799;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px){
+    .mi-informacion {
+      width: 90%;
+    }
+  }

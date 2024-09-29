@@ -1,0 +1,36 @@
+.mis-amistades {
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .buscador-amigos {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .lista-amigos {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .amigo {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .amigo:hover {
+    background-color: #e0e0e0;
+  }
+  
