@@ -164,7 +164,7 @@ const FiltroAutosUsados = () => {
                 <label className='labelStyle'>
                   ¿Financiamiento?  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={financiamiento}
                         onChange={handleCheckboxChange(setFinanciamiento)}
@@ -176,7 +176,7 @@ const FiltroAutosUsados = () => {
                 <label className='labelStyle'>
                   Se recibe auto  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={recibeAuto}
                         onChange={handleCheckboxChange(setRecibeAuto)}

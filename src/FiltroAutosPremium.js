@@ -161,7 +161,7 @@ const FiltroAutosPremium = () => {
                 <label className='labelStyle'>
                   Se recibe auto  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={recibeAuto}
                         onChange={handleCheckboxChange}

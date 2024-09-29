@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .screen {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,9 @@
   .title-ad {
     text-align: center;
     margin: 5vh 0 !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
   }
 
   .title-ad-button {
@@ -71,6 +76,9 @@
   
   .anuncio-info {
     flex: 1;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
   
   .anuncio-actions {
@@ -86,6 +94,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
   
   .btn-eliminar {

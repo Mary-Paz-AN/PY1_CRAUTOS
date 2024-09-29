@@ -1,4 +1,6 @@
-  /* Contenedor principal del anuncio */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ /* Contenedor principal del anuncio */
   .container-anuncio {
     flex: 1;
     margin-top: 2vh !important;
@@ -12,6 +14,9 @@
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
   }
 
   .form-create-add{
@@ -25,12 +30,15 @@
   .form-group {
     width: 100% !important;
     margin-bottom: 15px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
   }
   
   /* Etiqueta de cada campo */
   .label-create1 {
     display: block !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     margin-bottom: 5px !important;
     color: #555 !important;
   }
@@ -41,9 +49,12 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #f9f9f9;
     outline: none;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
   
   .inputs-create-add1:focus {
@@ -60,6 +71,9 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
   
   

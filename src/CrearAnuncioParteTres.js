@@ -25,7 +25,7 @@ function CrearAnuncioParteTres() {
 
           {/* Opción 1 */}
           <div className="opcion">
-            <h3>Opción 1:</h3>
+            <h3 className>Opción 1:</h3>
             <p>
               Confirmación automática de anuncio. Precio ¢ 2,260. Seleccione esta
               opción si desea que su anuncio aparezca inmediatamente en línea sin
