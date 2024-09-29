@@ -16,8 +16,15 @@ import suv from "./imagenes/CarroceriaSUV.png"
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 import './Inicio.css';
+import { useNavigate } from 'react-router-dom';
 
 function Inicio() {
+  const navigate = useNavigate();
+
+  const irPickups = () => {
+    navigate("/Pickups");
+  }
+
   return (
     <div>
       {/* Barra de navegación superior */}
@@ -72,7 +79,7 @@ function Inicio() {
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
             <button className='buttonGrid'>
-              <img src={pickup} alt="Pick-up" className="img-fluid custom-image" />
+              <img src={pickup} alt="Pick-up" className="img-fluid custom-image" onClick={irPickups}/>
               <p  className='textGrid'>Pick-up</p>
             </button>
           </Col>
