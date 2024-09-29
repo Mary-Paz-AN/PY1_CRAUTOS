@@ -34,3 +34,8 @@
     background-color: #e0e0e0;
   }
   
+@media(max-width: 1000px){
+  .mis-amistades {
+    width: 90%;
+  }
+}
