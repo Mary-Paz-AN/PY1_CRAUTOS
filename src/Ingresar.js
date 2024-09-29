@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Autos.css';
 import BarraSuperior from "./BarraSuperior";
 import BarraInferior from "./BarraInferior";
-import "./Ingresar.css"; // Importamos el CSS
+import "./Ingresar.css";
 import logoGoogle from "./imagenes/LogoGoogle.png"
 
 function Ingresar() {
@@ -17,14 +17,12 @@ function Ingresar() {
   };
 
   const handleGoogleSignIn = () => {
-    // Lógica para iniciar sesión con Google
-    alert("Iniciar sesión con Google");
+    navigate('/MiCuenta');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para manejar el inicio de sesión con correo y contraseña
-    alert(`Iniciando sesión con ${email}`);
+    navigate('/MiCuenta');
   };
 
   return (

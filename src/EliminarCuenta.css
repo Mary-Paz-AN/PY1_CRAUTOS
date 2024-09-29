@@ -1,0 +1,49 @@
+.eliminar-cuenta-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eliminar-cuenta-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.eliminar-cuenta-aviso {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eliminar-cuenta-confirmacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eliminar-cuenta-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.eliminar-cuenta-boton {
+    padding: 10px 20px;
+    background-color: #e63946; /* Color de advertencia */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.eliminar-cuenta-boton:hover {
+    background-color: #d62839; /* Color de advertencia al pasar el mouse */
+}
+
+.eliminado-mensaje {
+    text-align: center;
+}

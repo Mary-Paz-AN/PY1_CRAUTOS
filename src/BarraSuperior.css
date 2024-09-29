@@ -36,7 +36,7 @@
   max-height: 100%; /* Limitar el tamaño */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 .navbar-toggler {
   width: 40px !important; /* Tamaño del botón */
   height: 40px !important; /* Tamaño del botón */
@@ -52,9 +52,10 @@
   display: block !important; /* Asegura que sea visible */
   width: 100% !important; /* Tamaño de ícono */
   height: 100% !important; /* Tamaño de ícono */
-  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280, 0, 0, 1%29" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important; /* Ícono de tres líneas */
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23f5f5f5" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important; /* Ícono de tres líneas con color #f5f5f5 */
   background-size: contain !important; /* Asegura que el ícono no se recorte */
   background-repeat: no-repeat !important; /* No repite la imagen */
   background-position: center !important; /* Centra la imagen */
 }
+
 }
