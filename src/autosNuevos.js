@@ -21,6 +21,8 @@ const AutosNuevos = () => {
     <div className='scrollConteiner'>
       <BarraSuperior/>
       <div className='mainContainer'>
+        <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
+
         <div className='titleContainer'>
           <h1 className='h1Style'>Autos Nuevos</h1>
         </div>
@@ -28,8 +30,6 @@ const AutosNuevos = () => {
           Descubre información detallada, opciones de financiamiento y características de las principales marcas de autos nuevos.
           Explore diferentes modelos y elige el que mejor se adapte a sus expectativas.
         </h2>
-
-        <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
 
         <div className='contentContainer'>
           <FiltroAutosNuevos />

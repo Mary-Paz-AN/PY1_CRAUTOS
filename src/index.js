@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AutosNuevos from "./autosNuevos";
-import AutosNuevosModelos from "./autosNuevosModelos"
+import AutosNuevosModelos from "./autosNuevosModelos";
+import AutosUsados from "./autosUsados";
 import AutosPremium from "./autosPremium";
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
@@ -19,11 +20,12 @@ import MiCuenta from './MiCuenta';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>  {/* Envuelve tu aplicación en BrowserRouter */}
+    <BrowserRouter>  {/* Envuelve la aplicación en BrowserRouter */}
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
         <Route path="/AutosNuevosModelos" element={<AutosNuevosModelos />} />
+        <Route path="/AutosUsados" element={<AutosUsados />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />

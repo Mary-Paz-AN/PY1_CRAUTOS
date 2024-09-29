@@ -18,6 +18,8 @@ const AutosPremium = () => {
     <div className='scrollConteiner'>
       <BarraSuperior/>
       <div className='mainContainer'>
+      <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
+      
         <div className='titleContainer'>
           <h1 className='h1Style'>Autos Usados Premium</h1>
         </div>
@@ -25,8 +27,6 @@ const AutosPremium = () => {
             En esta sección encontrará los vehículos de las marcas mundialmente reconocidas como <strong>PREMIUM</strong>, y que no tengan más de 5 años de antigüedad.
             Explore diferentes modelos y elige el que mejor se adapte a sus expectativas.
         </h2>
-
-        <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
 
         <div className='contentContainer'>
           <FiltroAutosPremium />

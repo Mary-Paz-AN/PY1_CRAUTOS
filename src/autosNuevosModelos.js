@@ -18,11 +18,11 @@ const AutosNuevosModelos = () => {
     <div className='scrollConteiner'>
       <BarraSuperior/>
       <div className='mainContainer'>
+      <h2 className='flecha' onClick={irAutosNuevos}>&lt; Volver</h2>
+      
         <div className='titleContainer'>
           <h1 className='h1Style'>Autos Nuevos</h1>
         </div>
-
-        <h2 className='flecha' onClick={irAutosNuevos}>&lt; Volver</h2>
 
         <div className='contentContainer'>
           <FiltroAutosNuevos />
@@ -51,7 +51,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a2.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a2.jpg' alt='Audi A3 Sedán 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>A3 Sedán 2024</strong></p>
                   <p>1,400 cc</p>
@@ -67,7 +67,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a3.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a3.jpg' alt='Audi A4 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>A4 2024</strong></p>
                   <p>2,000 cc</p>
@@ -83,7 +83,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a4.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a4.jpg' alt='Audi A5 Sportback 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>A5 Sportback 2024</strong></p>
                   <p>2,000 cc</p>
@@ -99,7 +99,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a5.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a5.jpg' alt='Audi A6 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>A6 2024</strong></p>
                   <p>2,000 cc</p>
@@ -115,7 +115,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a6.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a6.jpg' alt='Audi A8 55 TFSI' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>A8 55 TFSI</strong></p>
                   <p>3,000 cc</p>
@@ -131,7 +131,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a7.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a7.jpg' alt='Audi e-tron GT Sport 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>e-tron GT Sport 2024</strong></p>
                   <p>Eléctrico</p>
@@ -146,7 +146,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a8.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a8.jpg' alt='Audi e-tron GT Sport Plus 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>e-tron GT Sport Plus 2024</strong></p>
                   <p>Eléctrico</p>
@@ -161,7 +161,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a9.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a9.jpg' alt='Audi Q2 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>Q2 2024</strong></p>
                   <p>1,400 cc</p>
@@ -177,7 +177,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a10.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a10.jpg' alt='Audi Q3 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>Q3 2024</strong></p>
                   <p>1,400 cc</p>
@@ -193,7 +193,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a11.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a11.jpg' alt='Audi Q3 Sportback 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>Q3 Sportback 2024</strong></p>
                   <p>1,400 cc</p>
@@ -209,7 +209,7 @@ const AutosNuevosModelos = () => {
                 <div className='titleContainerAuto'>
                   <h1 className='autoTitle'>Audi</h1>
                 </div>
-                <img src='/autos/a12.jpg' alt='Audi A3 Sportback 2024' className='autoImage'/>
+                <img src='/autos/a12.jpg' alt='Audi Q3 40 TFSI 2024' className='autoImage'/>
                 <div className='autoInfo'>
                   <p><strong>Q3 40 TFSI 2024</strong></p>
                   <p>1,984 cc</p>
@@ -225,6 +225,7 @@ const AutosNuevosModelos = () => {
 
         </div>
       </div>
+      
       <BarraInferior/>
     </div>
   );
