@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Autos.css';
 import './Logos.css';
-import FiltroAutosNuevos from './FiltroAutoNuevo';
+import FiltroAutosNuevos from './FiltroAutosNuevos';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
