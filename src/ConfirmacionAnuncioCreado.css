@@ -1,0 +1,76 @@
+.confirmation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.checkmark-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #229799;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  width: 35px;
+  height: 70px;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: draw-checkmark 2s forwards;
+}
+
+@keyframes draw-checkmark {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+.confirmation-message {
+  font-size: 24px;
+  color: #333;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.button-confirmation {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #229799;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes checkmark-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

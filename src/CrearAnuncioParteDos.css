@@ -1,0 +1,114 @@
+  /* Contenedor principal del formulario */
+  .anuncio-p2-container-checkbox {
+    background-color: white !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    width: 1000px;
+    max-width: 1000px !important;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .div-anuncio-p2{
+    display: flex;
+    width: 100vw;
+    justify-content:space-around;
+  }
+  
+  .anuncio-p2-title {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    color: #333 !important;
+  }
+  
+  /* Agrupación de los checkboxes en dos columnas */
+  .anuncio-p2-checkbox-group {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  
+  /* Estilo de cada columna */
+  .anuncio-p2-column {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-basis: 48% !important; /* Asegura que haya un pequeño espacio entre columnas */
+  }
+  
+  /* Estilo de los labels y checkboxes */
+  .anuncio-p2-label {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 17px !important;
+    margin-bottom: 10px !important;
+    color: #555 !important;
+  }
+  
+  .anuncio-p2-checkbox {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid #48CFCB !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    position: relative !important;
+    margin-right: 2px;
+  }
+  
+  /* Estilo del checkbox cuando está seleccionado */
+  .anuncio-p2-checkbox:checked {
+    background-color: #229799 !important;
+    border-color: #48CFCB !important;
+  }
+
+  .anuncio-p2-checkbox:checked::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 2px !important;
+    left: 5px !important;
+    width: 6px !important;
+    height: 12px !important;
+    border: solid white !important;
+    border-width: 0 2px 2px 0 !important;
+    transform: rotate(45deg) !important;
+  }
+  
+  /* Botón para continuar */
+  .anuncio-p2-btn-enviar {
+    display: block !important;
+    margin: 20px auto !important;
+    padding: 10px 20px !important;
+    background-color: #229799 !important;
+    color: #f5f5f5 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+  }
+  
+  /* Responsive para pantallas más pequeñas (móviles) */
+  @media (max-width: 1000px) {
+    .anuncio-p2-checkbox-group {
+      flex-direction: column !important;
+    }
+  
+    .anuncio-p2-column {
+      flex-basis: 100% !important; /* Ocupan el 100% del ancho en móviles */
+      margin-bottom: 20px !important;
+    }
+
+    .anuncio-p2-container-checkbox {
+        background-color: white !important;
+        padding: 20px !important;
+        border-radius: 10px !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+  }
+  

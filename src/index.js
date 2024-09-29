@@ -6,9 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import AutosNuevos from "./autosNuevos"
 import AutosPremium from "./autosPremium"
 import Inicio from './Inicio';
+import GestionAnuncios from './GestionAnuncios';
 import Contactenos from './Contactenos';
 import Registrarse from './Registrarse';
 import Ingresar from './Ingresar';
+import CrearAnuncioParteUno from './CrearAnuncioParteUno';
+import CrearAnuncioParteDos from './CrearAnuncioParteDos';
+import CrearAnuncioParteTres from './CrearAnuncioParteTres';
+import ConfirmacionEnvio from './ConfirmacionAnuncioCreado';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,9 +23,14 @@ root.render(
         <Route path="/" element={<Inicio />} />
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
+        <Route path="/GestionAnuncios" element={<GestionAnuncios />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />
         <Route path="/Ingresar" element={<Ingresar />} />
+        <Route path="/CrearAnuncioParteUno" element={<CrearAnuncioParteUno />} />
+        <Route path="/CrearAnuncioParteDos" element={<CrearAnuncioParteDos />} />
+        <Route path="/CrearAnuncioParteTres" element={<CrearAnuncioParteTres />} />
+        <Route path="/ConfirmacionEnvio" element={<ConfirmacionEnvio />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

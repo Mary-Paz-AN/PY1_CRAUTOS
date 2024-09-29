@@ -98,7 +98,6 @@ function Inicio() {
           </Col>
         </Row>
       </Container>
-
       <BarraInferior/>
     </div>
   );
