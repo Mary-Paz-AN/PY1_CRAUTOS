@@ -2,11 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Autos.css';
 import './Logos.css';
-import FiltroAutosNuevos from './FiltroAutoNuevo';
+import FiltroAutosNuevos from './filtroAutoNuevo';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
-// Componente funcional de React para mostrar autos nuevos
 const AutosNuevos = () => {
   const navigate = useNavigate();
 

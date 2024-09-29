@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './VistaAutos.css';
-import FiltroAutosNuevos from './FiltroAutoNuevo';
+import FiltroAutosNuevos from './filtroAutoNuevo';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
