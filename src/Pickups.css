@@ -54,3 +54,9 @@
     color: #424242;
     text-align: center;
   }
+
+  @media (max-width: 1000px){
+    .grid-container {
+      width: 90%;
+    }
+  }
