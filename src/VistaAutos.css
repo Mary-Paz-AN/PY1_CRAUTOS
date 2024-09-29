@@ -3,6 +3,7 @@
 .titleAutosContainer {
     width: 70%; 
     justify-content: center;
+    margin-top: 20px;
 }
 
 .autoContainer {
@@ -12,6 +13,24 @@
     padding: 20px;
     align-items: center;
     justify-content: center;
+}
+
+.sectionTitle {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    text-align: center;
+    color: #424242;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
 }
 
 .titleContainerAuto {
@@ -38,6 +57,7 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .autoTitle {
@@ -94,5 +114,9 @@
 
     .autoTitle {
         font-size: 18px; 
+    }
+
+    .sectionTitle {
+        font-size: 20px;
     }
 }

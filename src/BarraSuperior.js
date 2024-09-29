@@ -27,6 +27,10 @@ function BarraSuperior() {
     navigate('/AutosNuevos');
   };
 
+  const irAutosUsados = () => {
+    navigate('/AutosUsados');
+  };
+
   const irAutosPremium = () => {
     navigate('/AutosPremium');
   };
@@ -55,8 +59,8 @@ function BarraSuperior() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link onClick={irAutosNuevos} className="nav-link">Autos Nuevos</Nav.Link>
-            <Nav.Link href="#autos-usados" className="nav-link">Autos Usados</Nav.Link>
-            <Nav.Link onClick={irAutosPremium} href="#usados-premium" className="nav-link">Usados Premium</Nav.Link>
+            <Nav.Link onClick={irAutosUsados} className="nav-link">Autos Usados</Nav.Link>
+            <Nav.Link onClick={irAutosPremium} className="nav-link">Usados Premium</Nav.Link>
             <Nav.Link href="#libro-azul" className="nav-link">Libro Azul</Nav.Link>
             <Nav.Link href="#simular-financiamiento" className="nav-link">Simular Financiamiento</Nav.Link>
             <p className="nav-link">{isSmallScreen ? '⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯' : '|'}</p> {/* Aquí cambia el símbolo */}
