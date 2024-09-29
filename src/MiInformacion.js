@@ -29,7 +29,7 @@ const MiInformacion = () => {
   return (
     <div className="div-principal">
       <div className="mi-informacion">
-        <h2>Mi Información</h2>
+        <h2 className="title-estilo">Mi Información</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="form-group">
