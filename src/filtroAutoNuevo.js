@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Filtro.css';
 
 const FiltroAutosNuevos = () => {
@@ -10,23 +11,74 @@ const FiltroAutosNuevos = () => {
   const [puertas, setPuertas] = useState('');
   const [año, setAño] = useState('');
 
+  const navigate = useNavigate();
+
+  const irModelos = () => {
+    navigate('/AutosNuevosModelos');
+  }
+
   // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
-  const marcas = ['Toyota', 'Honda', 'Ford'];
+  const marcas = [
+      'AION',
+      'Audi',
+      'BMW',
+      'BYD',
+      'Changan',
+      'Chery',
+      'Chevrolet',
+      'Citroën',
+      'Dodge',
+      'Fiat',
+      'Ford',
+      'Fuso',
+      'Geely',
+      'Hino',
+      'Honda',
+      'Hyundai',
+      'JAC',
+      'Jaguar',
+      'Jeep',
+      'JMC',
+      'Kia',
+      'Land Rover',
+      'Mazda',
+      'Mercedes-Benz',
+      'MG',
+      'Mitsubishi',
+      'Nissan',
+      'Peugeot',
+      'Porsche',
+      'RAM',
+      'Renault',
+      'Ssang Yong',
+      'Suzuki',
+      'VGV',
+      'Volkswagen',
+      'Volvo',
+      'ZNA (Dong Feng)'
+  ]
   const modelos = ['Corolla', 'Civic', 'Mustang'];
-  const combustibles = ['Gasolina', 'Diesel', 'Eléctrico'];
+  const combustibles = ['Gasolina', 'Diesel', 'Eléctrico','Hibrido'];
   const transmisiones = ['Manual', 'Automática'];
-  const puertasOptions = [2, 4];
-  const años = [2022, 2023, 2024];
+  const puertasOptions = [2, 3, 4];
+  const años = [2020, 2021, 2022, 2023, 2024];
 
   // Función para manejar los cambios en los select
   const handleChange = (setter) => (event) => {
     setter(event.target.value);
   };
 
+  const funFiltro = (event) => {
+    event.preventDefault(); 
+    if (marca === 'Audi') {
+      irModelos();
+    }
+  };
+
   return (
     <div className="filterContainer">
       <h2 className='title'>Filtrar Autos</h2>
-      <form>
+      <form onSubmit={funFiltro}>
         {/* Marca */}
         <label className='labelStyle'>
           Marca:

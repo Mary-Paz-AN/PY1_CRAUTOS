@@ -22,20 +22,19 @@ body {
 }
 
 .titleContainer {
-    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
     align-items: center; 
+    justify-content: center;
 }
 
 .titleContainer::after {
     content: '';
     display: block;
-    width: 70%; /* Ajusta este valor para hacer la línea más corta o más larga */
+    width: 70%; 
     border-bottom: 2px solid lightgrey;
-    margin-top: 10px; /* Espacio entre el título y la línea */
+    margin-top: 10px; 
 }
 
 .titleInfoContainer {
@@ -47,17 +46,17 @@ body {
 }
 
 .h1Style {
-    color: #424242;
+    color: #212529;
     margin-top: 35px;
     text-align: center;
-    font-size: 30px;
+    font-size: 30px !important;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .h2Style {
-    color: #424242;
+    color: #212529;
     font-size: 18px;
     text-align: center;
     margin-top: 20px;
@@ -68,8 +67,20 @@ body {
     font-style: normal;
 }
 
-.title {
+.flecha {
     color: #229799;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.title {
+    color: #212529;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -78,10 +89,12 @@ body {
 
 .contentContainer {
     display: flex;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     .contentContainer {
         display: flex;

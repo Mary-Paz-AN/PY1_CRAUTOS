@@ -1,5 +1,6 @@
 import React from 'react';
-import './autoNuevoStyle.css';
+import { useNavigate } from 'react-router-dom';
+import './Autos.css';
 import './Logos.css';
 import FiltroAutosNuevos from './FiltroAutoNuevo';
 import BarraSuperior from './BarraSuperior';
@@ -7,7 +8,15 @@ import BarraInferior from './BarraInferior';
 
 // Componente funcional de React para mostrar autos nuevos
 const AutosNuevos = () => {
+  const navigate = useNavigate();
 
+  const irModelos = () => {
+    navigate('/AutosNuevosModelos');
+  };
+
+  const irInicio = () => {
+    navigate('/');
+  };
 
   return (
     <div className='scrollConteiner'>
@@ -21,6 +30,8 @@ const AutosNuevos = () => {
           Explore diferentes modelos y elige el que mejor se adapte a sus expectativas.
         </h2>
 
+        <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
+
         <div className='contentContainer'>
           <FiltroAutosNuevos />
 
@@ -33,7 +44,7 @@ const AutosNuevos = () => {
                 <h3 className='logoTitle'>AION</h3>
               </div>
               {/*Audi */}
-              <div className='logo'>
+              <div onClick={irModelos} className='logo'>
                 <img src='/logosMarcas/audi.png' alt='Logo de Audi' className='logoImagen'/>
                 <h3 className='logoTitle'>Audi</h3>
               </div>

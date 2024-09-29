@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import './Autos.css';
 import BarraSuperior from "./BarraSuperior";
 import BarraInferior from "./BarraInferior";
 import "./Ingresar.css"; // Importamos el CSS
@@ -7,6 +9,12 @@ import logoGoogle from "./imagenes/LogoGoogle.png"
 function Ingresar() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  const irInicio = () => {
+    navigate('/');
+  };
 
   const handleGoogleSignIn = () => {
     // Lógica para iniciar sesión con Google
@@ -22,10 +30,12 @@ function Ingresar() {
   return (
     <div className="screen">
       <BarraSuperior />
+
+      <h2 className='flecha' onClick={irInicio}>&lt; Volver</h2>
       
       <div className="login-container">
         <form onSubmit={handleSubmit} className="login-form">
-          <h2>Iniciar Sesión</h2>
+          <h2 className="title-font" >Iniciar Sesión</h2>
           
           <div className="form-group">
             <label>Correo electrónico:</label>

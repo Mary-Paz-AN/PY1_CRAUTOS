@@ -50,8 +50,10 @@ function BarraSuperior() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
-        <Navbar.Brand className="navbar-brand" onClick={irInicio}>
-          CRAUTOS
+        <Navbar.Brand href="#home" className="navbar-brand" onClick={irInicio}>
+        <img 
+           src={isSmallScreen ? '/logosMarcas/logoMovil.png' : '/logosMarcas/logo.png'} 
+           alt='Logo de CRAUTOS' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
