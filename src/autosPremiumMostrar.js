@@ -1,17 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './VistaAutos.css';
-import FiltroAutosNuevos from './FiltroAutoNuevo';
-import AudiNuevos from './audiNuevo';
+import FiltroAutosPremium from './FiltroAutosPremium';
+import AudiUsados from './audiUsados';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
 // Componente funcional de React para mostrar autos nuevos
-const AutosNuevosModelos = () => {
+const AutosPremiumMostrar = () => {
   const navigate = useNavigate();
 
-  const irAutosNuevos = () => {
-    navigate('/AutosNuevos');
+  const irAutosPremieum = () => {
+    navigate('/AutosPremium');
   };
   
 
@@ -19,18 +19,20 @@ const AutosNuevosModelos = () => {
     <div className='scrollConteiner'>
       <BarraSuperior/>
       <div className='mainContainer'>
-      <h2 className='flecha' onClick={irAutosNuevos}>&lt; Volver</h2>
+      <h2 className='flecha' onClick={irAutosPremieum}>&lt; Volver</h2>
       
         <div className='titleContainer'>
-          <h1 className='h1Style'>Autos Nuevos</h1>
+          <h1 className='h1Style'>Autos Premium</h1>
         </div>
+        <h2 className='h2Style'>
+            <strong style={{color: '#f3b93c'}}>¡Cuidado!</strong> Recuerde que el tipo de cambio actual es: ₡571 por cada $1. Por lo tanto, los precios con (*) son estimaciones aproximadas.
+        </h2>
 
         <div className='contentContainer'>
-          <FiltroAutosNuevos />
+          <FiltroAutosPremium />
 
           <div className='titleAutosContainer'>
-            <h3 className='title'>Modelos</h3>
-            <AudiNuevos />
+            <AudiUsados />
           </div>
 
         </div>
@@ -41,4 +43,4 @@ const AutosNuevosModelos = () => {
   );
 };
 
-export default AutosNuevosModelos;
+export default AutosPremiumMostrar;

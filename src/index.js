@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import AutosNuevos from "./autosNuevos";
 import AutosNuevosModelos from "./autosNuevosModelos";
 import AutosUsados from "./autosUsados";
+import FiltradoAudiUsados from "./filtradoAudiUsados";
+import AutosOferta from "./autosOfertas";
 import AutosPremium from "./autosPremium";
+import AutosPremiumMostrar from './autosPremiumMostrar';
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
 import Registrarse from './Registrarse';
@@ -27,7 +30,10 @@ root.render(
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
         <Route path="/AutosNuevosModelos" element={<AutosNuevosModelos />} />
         <Route path="/AutosUsados" element={<AutosUsados />} />
+        <Route path="/FiltradoAudiUsados" element={<FiltradoAudiUsados />} />
+        <Route path="/AutosOferta" element={<AutosOferta />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
+        <Route path="/AutosPremiumMostrar" element={<AutosPremiumMostrar />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />
         <Route path="/Ingresar" element={<Ingresar />} />
