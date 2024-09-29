@@ -28,7 +28,7 @@ const MisAmistades = () => {
   return (
     <div className="div-principal">
       <div className="mis-amistades">
-        <h2>Mis Amistades</h2>
+        <h2 className="title-estilo">Mis Amistades</h2>
 
         {/* Input de búsqueda */}
         <input

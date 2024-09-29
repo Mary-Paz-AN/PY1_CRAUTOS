@@ -25,6 +25,10 @@ const AutosNuevosModelos = () => {
     const irInicio = () => {
         navigate('/');
     };
+
+    const irOfertas = () => {
+        navigate('/AutosOferta');
+    };
   
 
   return (
@@ -170,7 +174,7 @@ const AutosNuevosModelos = () => {
                         </div>
                     </div>
                     <div className='centerContainer'>
-                        <button type="button" style={{width: '90%', backgroundColor: '#424242'}} className="btnVerMas">Ver más</button>
+                        <button type="button" style={{width: '90%', backgroundColor: '#424242'}} className="btnVerMas" onClick={irOfertas}>Ver más</button>
                     </div>
 
                     <div style={{padding: '20px'}}></div>

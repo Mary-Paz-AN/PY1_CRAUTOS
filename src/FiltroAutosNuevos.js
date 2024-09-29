@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Filtro.css';
+import InfoHandler from './InfoHandler';
 
 const FiltroAutosNuevos = () => {
   // Estados para cada opción seleccionada
@@ -10,14 +11,14 @@ const FiltroAutosNuevos = () => {
   const [transmision, setTransmision] = useState('');
   const [puertas, setPuertas] = useState('');
   const [año, setAño] = useState('');
+  const [warning, setWarning] = useState(false);
 
   const navigate = useNavigate();
-
+  
   const irModelos = () => {
     navigate('/AutosNuevosModelos');
   }
 
-  // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
   const marcas = [
       'AION',
       'Audi',
@@ -72,6 +73,8 @@ const FiltroAutosNuevos = () => {
     event.preventDefault(); 
     if (marca === 'Audi') {
       irModelos();
+    } else {
+      setWarning(true);
     }
   };
 
@@ -166,6 +169,13 @@ const FiltroAutosNuevos = () => {
         {/* Botón para aplicar el filtro */}
         <button className='buttonStyle' type="submit">Buscar</button>
       </form>
+
+      <InfoHandler
+          message="No se encontraron autos que coincidan con las características seleccionadas."
+          show={warning}
+          close={() => setWarning(false)}
+          type="LO SENTIMOS"
+        />
     </div>
   );
 };

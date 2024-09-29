@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Filtro.css';
+import { useNavigate } from 'react-router-dom';
+import './Filtro.css';
+import InfoHandler from './InfoHandler';
 
 const FiltroAutosPremium = () => {
     // Estados para cada opción seleccionada
@@ -17,6 +20,9 @@ const FiltroAutosPremium = () => {
     const [recibeAuto, setRecibeAuto] = useState(false);
     const [provincia, setProvincia] = useState('');
     const [ordenarPor, setOrdenarPor] = useState('');
+
+    const [warning, setWarning] = useState(false);
+    const navigate = useNavigate();
 
     // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
     const origenes = ['Agencia', 'Particular'];
@@ -41,10 +47,23 @@ const FiltroAutosPremium = () => {
         setRecibeAuto(event.target.checked);
     };
 
+    const irFiltradoAudi = () => {
+        navigate('/AutosPremiumMostrar');
+      }
+
+    const funFiltro = (event) => {
+        event.preventDefault(); 
+        if (marca === 'Audi') {
+            irFiltradoAudi();
+        } else {
+          setWarning(true);
+        }
+    };
+
     return (
         <div className="filterContainer">
             <h2 className='title'>Filtrar Autos</h2>
-            <form>
+            <form onSubmit={funFiltro}>
                 {/* Origen */}
                 <label className='labelStyle'>
                     Origen:
@@ -161,7 +180,7 @@ const FiltroAutosPremium = () => {
                 <label className='labelStyle'>
                   Se recibe auto  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={recibeAuto}
                         onChange={handleCheckboxChange}
@@ -240,6 +259,12 @@ const FiltroAutosPremium = () => {
                 {/* Botón para aplicar el filtro */}
                 <button className='buttonStyle' type="submit">Buscar</button>
             </form>
+            <InfoHandler
+                message="No se encontraron autos que coincidan con las características seleccionadas."
+                show={warning}
+                close={() => setWarning(false)}
+                type="LO SENTIMOS"
+            />
         </div>
     );
 };

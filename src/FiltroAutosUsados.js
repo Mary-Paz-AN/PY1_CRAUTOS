@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Filtro.css';
+import InfoHandler from './InfoHandler';
 
 const FiltroAutosUsados = () => {
     // Estados para cada opción seleccionada
@@ -19,6 +21,9 @@ const FiltroAutosUsados = () => {
     const [provincia, setProvincia] = useState('');
     const [estado, setEstado] = useState('');
     const [ordenarPor, setOrdenarPor] = useState('');
+
+    const [warning, setWarning] = useState(false);
+    const navigate = useNavigate();
 
     // Datos de ejemplo para los ComboBox (puedes cargarlos dinámicamente si lo necesitas)
     const origenes = ['Agencia', 'Particular'];
@@ -44,10 +49,23 @@ const FiltroAutosUsados = () => {
         setter(event.target.checked);
     };
 
+    const irFiltradoAudi = () => {
+        navigate('/FiltradoAudiUsados');
+      }
+
+    const funFiltro = (event) => {
+        event.preventDefault(); 
+        if (marca === 'Audi' && estado === 'Ambos') {
+            irFiltradoAudi();
+        } else {
+          setWarning(true);
+        }
+    };
+
     return (
         <div className="filterContainer">
             <h2 className='title'>Filtrar Autos</h2>
-            <form>
+            <form onSubmit={funFiltro}>
                 {/* Origen */}
                 <label className='labelStyle'>
                     Origen:
@@ -164,7 +182,7 @@ const FiltroAutosUsados = () => {
                 <label className='labelStyle'>
                   ¿Financiamiento?  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={financiamiento}
                         onChange={handleCheckboxChange(setFinanciamiento)}
@@ -176,7 +194,7 @@ const FiltroAutosUsados = () => {
                 <label className='labelStyle'>
                   Se recibe auto  
                     <input
-                        style={{ marginLeft: '10px' }}
+                        className='checkBoxStyle'
                         type="checkbox"
                         checked={recibeAuto}
                         onChange={handleCheckboxChange(setRecibeAuto)}
@@ -269,6 +287,12 @@ const FiltroAutosUsados = () => {
                 {/* Botón para aplicar el filtro */}
                 <button className='buttonStyle' type="submit">Buscar</button>
             </form>
+            <InfoHandler
+                message="No se encontraron autos que coincidan con las características seleccionadas."
+                show={warning}
+                close={() => setWarning(false)}
+                type="LO SENTIMOS"
+            />
         </div>
     );
 };

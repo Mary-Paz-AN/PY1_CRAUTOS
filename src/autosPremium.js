@@ -14,6 +14,10 @@ const AutosPremium = () => {
     navigate('/');
   };
 
+  const irMostrar = () => {
+    navigate('/AutosPremiumMostrar');
+  };
+
   return (
     <div className='scrollConteiner'>
       <BarraSuperior/>
@@ -35,7 +39,7 @@ const AutosPremium = () => {
             <h3 className='title'>Marcas</h3>
             <div className='logoContainer'>
               {/*Audi */}
-              <div className='logo'>
+              <div className='logo' onClick={irMostrar}>
                 <img src='/logosMarcas/audi.png' alt='Logo de Audi' className='logoImagen'/>
                 <h3 className='logoTitle'>Audi</h3>
               </div>
