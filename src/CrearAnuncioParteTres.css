@@ -94,6 +94,8 @@
 
   .checkbox-terms{
     width: min-content;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   /* Estilos base del checkbox */
