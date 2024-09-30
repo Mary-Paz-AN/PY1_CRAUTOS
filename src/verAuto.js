@@ -12,6 +12,8 @@ import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
 const VerAuto = () => {
+    const [prima, setPrima] = useState(2931);
+    const [cuotaMensual, setCuotaMensual] = useState(2931);
     const [imagenGrande, setImagenGrande] = useState('/autos/ao1.jpg'); 
     const [altImagenGrande, setAltImagenGrande] = useState('Nisan Versa 2021 de frente'); 
     const [favoriteImage, setFavoriteImage] = useState('/iconos/favoritos.png');
@@ -32,8 +34,13 @@ const VerAuto = () => {
     }, []);
 
     useEffect(() => {
-        window.scrollTo(0, 0); // Llevar el scroll a la parte superior
+        window.scrollTo(0, 0); 
     }, []);
+
+    const handleChange = (setter) => (event) => {
+        setter(event.target.value);
+        setCuotaMensual(19536 * prima)
+    };
 
     const irAutosUsados = () => {
         navigate('/AutosUsados');
@@ -368,7 +375,66 @@ const VerAuto = () => {
 
                         <div style={{padding: '25px'}}></div>
 
-                        
+                        <h3>Calculadora de Cuotas Mensauales</h3>
+                        <div className='infoText'>
+                            <table style={{width: '100%', borderCollapse: 'collapse'}}>
+                                <tbody>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Precio del vehículo:</th>
+                                        <td className='infoValue'>$ 19, 536</td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>
+                                            Prima deseada $:
+                                            <br/> 
+                                            <th style={{fontSize: '14px', color: 'gray'}}>
+                                                *Dabe ser igual o mayor as las prima mínima
+                                            </th>
+                                        </th>
+                                        <td className='infoValue'>
+                                            <input
+                                                type="number"
+                                                className='inputStyle'
+                                                value={prima}
+                                                onChange={handleChange(setPrima)}
+                                                placeholder="Escriba su prima deseada"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Plazo:</th>
+                                        <td className='infoValue'>96 meses</td>
+                                    </tr>
+                                    <br />
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Cuota Mensual $:</th>
+                                        <td className='infoValue'>
+                                            <input
+                                                type="number"
+                                                className='inputStyle'
+                                                value={cuotaMensual}
+                                                readOnly
+                                            />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div style={{padding: '25px'}}></div>
+                            
+                            <div className='infoText'>
+                                <p>
+                                    <strong style={{color: '#aa0000'}}>¡Cuidado!</strong>
+                                    <br />
+                                    Cuota mensual <strong>NO</strong> incluye costo del seguro, el cual es obligatorio.
+                                    <br />
+                                    Mensualidades son aproximadas y sujetas al avalúo final del vehículo.
+                                    <br />
+                                    Cuotas en dólares son estimadas y pueden variar de acuerdo al tipo de cambio del día en que se realice la transacción. 
+                                    Aplican restricciones. Para poder contar con financiamiento el vehículo debe estar libre de gravámenes y colisiones.
+                                </p>
+                            </div>
+                        </div>
 
                     </div>
                 
