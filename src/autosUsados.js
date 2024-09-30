@@ -29,6 +29,10 @@ const AutosNuevosModelos = () => {
     const irOfertas = () => {
         navigate('/AutosOferta');
     };
+
+    const irVerAuto = () => {
+        navigate('/VerAuto');
+    };
   
 
   return (
@@ -59,7 +63,7 @@ const AutosNuevosModelos = () => {
                     <h3 className='sectionTitle'>{isSmallScreen ? 'OFERTAS DEL DÍA' : '⎯⎯⎯⎯⎯ OFERTAS DEL DÍA ⎯⎯⎯⎯⎯'}</h3>
                     <div className='autoContainer'>
                         {/*Oferta 1 */}
-                        <div className='auto'>
+                        <div className='auto' onClick={irVerAuto}>
                             <div className='titleContainerAuto'>
                                 <h1 className='autoTitle'>Nissan</h1>
                             </div>

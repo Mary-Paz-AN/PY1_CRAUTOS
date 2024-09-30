@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import AutosNuevos from "./autosNuevos";
 import AutosNuevosModelos from "./autosNuevosModelos";
 import AutosUsados from "./autosUsados";
+import VerAuto from './verAuto'
 import FiltradoAudiUsados from "./filtradoAudiUsados";
 import AutosOferta from "./autosOfertas";
 import AutosPremium from "./autosPremium";
@@ -35,6 +36,7 @@ root.render(
         <Route path="/AutosNuevos" element={<AutosNuevos />} />
         <Route path="/AutosNuevosModelos" element={<AutosNuevosModelos />} />
         <Route path="/AutosUsados" element={<AutosUsados />} />
+        <Route path="/VerAuto" element={<VerAuto />} />
         <Route path="/FiltradoAudiUsados" element={<FiltradoAudiUsados />} />
         <Route path="/AutosOferta" element={<AutosOferta />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
