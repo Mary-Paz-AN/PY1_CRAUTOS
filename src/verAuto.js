@@ -266,8 +266,111 @@ const VerAuto = () => {
 
                     <div style={{padding: '25px'}}></div>
 
-                    
+                    <div className='row infoRow'>
+                        <div className='titles'>
+                            <h3>Financiamiento</h3>
+                        </div>
+                        <div className='infoText'>
+                            <p>
+                                Para solicitar la pre-aprobación presione los iconos.
+                                <br />
+                                Sus opciones de financiamiento son las siguientes:
+                            </p>
+                        </div>
 
+                        <div className='iconWithText'>
+                            <img src='/iconos/bac.png' alt='Icono del BAC Credomatic' />
+                            <p>BAC Credomatic</p>
+                        </div>
+                        <div className='infoText'>
+                            <table style={{width: '100%', borderCollapse: 'collapse'}}>
+                                <tbody>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Precio del vehículo:</th>
+                                        <td className='infoValue'>$ 19, 536</td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Prima mínima:</th>
+                                        <td className='infoValue'>$ 4, 884</td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>
+                                            <th style={{fontSize: '14px', color: 'gray'}}>
+                                                Financiamiento:
+                                            </th>
+                                            Base de financiamiento: 
+                                        </th>
+                                        <td className='infoValue'>
+                                            <br />
+                                            $ 15, 128
+                                            <td style={{fontSize: '14px', color: 'gray', textAlign: 'right'}}>
+                                                Más comisión de formalización del 3.25%
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>
+                                        <th style={{fontSize: '14px', color: 'gray'}}>
+                                            Plazo Disponible:
+                                        </th>
+                                            96 meses
+                                        </th>
+                                        <td className='infoValue'>$ 207</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div style={{padding: '25px'}}></div>
+
+                        <div className='iconWithText'>
+                            <img src='/iconos/credi.png' alt='Icono de CrediQ' />
+                            <p>CrediQ</p>
+                        </div>
+                        <div className='infoText'>
+                            <table style={{width: '100%', borderCollapse: 'collapse'}}>
+                                <tbody>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Precio del vehículo:</th>
+                                        <td className='infoValue'>$ 19, 536</td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>Prima mínima:</th>
+                                        <td className='infoValue'>$ 2, 931</td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>
+                                            <th style={{fontSize: '14px', color: 'gray'}}>
+                                                Financiamiento:
+                                            </th>
+                                            Base de financiamiento: 
+                                        </th>
+                                        <td className='infoValue'>
+                                            <br />
+                                            $ 17, 402
+                                            <td style={{fontSize: '14px', color: 'gray', textAlign: 'right'}}>
+                                                Más comisión de formalización del 4.80%
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr className='infoSpace'>
+                                        <th className='infoLabel'>
+                                        <th style={{fontSize: '14px', color: 'gray'}}>
+                                            Plazo Disponible:
+                                        </th>
+                                            96 meses
+                                        </th>
+                                        <td className='infoValue'>$ 273</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div style={{padding: '25px'}}></div>
+
+                        
+
+                    </div>
                 
                 </div>
             </div>
