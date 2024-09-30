@@ -7,7 +7,7 @@ import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
 
 // Componente funcional de React para mostrar autos nuevos
-const AutosNuevosModelos = () => {
+const AutosUsados = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const navigate = useNavigate();
   
@@ -63,7 +63,7 @@ const AutosNuevosModelos = () => {
                     <h3 className='sectionTitle'>{isSmallScreen ? 'OFERTAS DEL DÍA' : '⎯⎯⎯⎯⎯ OFERTAS DEL DÍA ⎯⎯⎯⎯⎯'}</h3>
                     <div className='autoContainer'>
                         {/*Oferta 1 */}
-                        <div className='auto' onClick={irVerAuto}>
+                        <div className='auto'>
                             <div className='titleContainerAuto'>
                                 <h1 className='autoTitle'>Nissan</h1>
                             </div>
@@ -78,7 +78,7 @@ const AutosNuevosModelos = () => {
                                     <br/>
                                     <strong style={{color: '#aa0000'}}>$ 19, 536*</strong>
                                 </p>
-                                <button type="button" className="btnVerMas">Ver más</button>
+                                <button type="button" onClick={irVerAuto} className="btnVerMas">Ver más</button>
                             </div>
                         </div>
                         {/*Oferta 2 */}
@@ -311,4 +311,4 @@ const AutosNuevosModelos = () => {
   );
 };
 
-export default AutosNuevosModelos;
+export default AutosUsados;

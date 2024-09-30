@@ -5,8 +5,8 @@ function InfoHandler({ message, show, close, type }) {
 
   //Shows a box with  information
   return (
-    <div className= "hide">
-      <div className= "show">
+    <div className= "hideEstilo">
+      <div className= "showEstilo">
         <h2>{type}</h2>
         <p style={{color: 'black'}}>{message}</p>
         <button onClick={close} className="btnHandler">Cerrar</button>
