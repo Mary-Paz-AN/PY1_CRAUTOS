@@ -11,6 +11,7 @@ import FiltradoAudiUsados from "./filtradoAudiUsados";
 import AutosOferta from "./autosOfertas";
 import AutosPremium from "./autosPremium";
 import AutosPremiumMostrar from './autosPremiumMostrar';
+import Bluebook from './Bluebook';
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
 import Registrarse from './Registrarse';
@@ -39,6 +40,7 @@ root.render(
         <Route path="/AutosOferta" element={<AutosOferta />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
         <Route path="/AutosPremiumMostrar" element={<AutosPremiumMostrar />} />
+        <Route path="/Bluebook" element={<Bluebook />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />
         <Route path="/Ingresar" element={<Ingresar />} />

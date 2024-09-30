@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Autos.css';
+import './verAuto.css';
 import AudiUsados from './audiUsados';
 import BarraSuperior from './BarraSuperior';
 import BarraInferior from './BarraInferior';
@@ -38,8 +39,9 @@ const AutosNuevos = () => {
                 <div></div>
             </div>
 
-            <h3 className='sectionTitle'>{isSmallScreen ? 'AUTOS SIMILARES' : '⎯⎯⎯⎯⎯ AUTOS SIMILARES ⎯⎯⎯⎯⎯'}</h3>
+            <h3 className='text'>{isSmallScreen ? 'AUTOS SIMILARES' : '⎯⎯⎯⎯⎯ AUTOS SIMILARES ⎯⎯⎯⎯⎯'}</h3>
             <AudiUsados />
+            <button type="button" className="verMasbtn">Ver más</button>
         </div>
         <BarraInferior/>
     </div>
