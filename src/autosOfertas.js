@@ -12,6 +12,10 @@ const AutosOferta = () => {
   const irAutosUsados = () => {
     navigate('/AutosUsados');
   };
+
+  const irVerAuto = () => {
+    navigate('/VerAuto');
+  };
   
 
   return (
@@ -39,7 +43,7 @@ const AutosOferta = () => {
           <div className='titleAutosContainer'>
             <div className='autoContainer'>
                 {/*Oferta 1 */}
-                <div className='auto'>
+                <div className='auto' >
                     <div className='titleContainerAuto'>
                         <h1 className='autoTitle'>Nissan</h1>
                     </div>
@@ -54,7 +58,7 @@ const AutosOferta = () => {
                             <br/>
                             <strong style={{color: '#aa0000'}}>$ 19, 536*</strong>
                         </p>
-                        <button type="button" className="btnVerMas">Ver más</button>
+                        <button type="button" className="btnVerMas" onClick={irVerAuto}>Ver más</button>
                     </div>
                 </div> 
                 {/*Oferta 2 */}
