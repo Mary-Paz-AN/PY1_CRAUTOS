@@ -31,6 +31,10 @@ const VerAuto = () => {
         };
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Llevar el scroll a la parte superior
+    }, []);
+
     const irAutosUsados = () => {
         navigate('/AutosUsados');
     };
