@@ -18,7 +18,7 @@ const ConfirmationPage = () => {
   const navigate = useNavigate();
 
   const irGestiones = () => {
-    navigate('/GestionAnuncios');
+    navigate('/MiCuenta');
   };
 
   return (
