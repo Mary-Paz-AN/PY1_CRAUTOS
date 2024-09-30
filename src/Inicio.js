@@ -37,6 +37,14 @@ function Inicio() {
     navigate("/Coupes")
   }
 
+  const irConvertibles = () => {
+    navigate("/Convertibles")
+  }
+
+  const irHatchbacks = () => {
+    navigate("/Hatchbacks")
+  }
+
   return (
     <div>
       {/* Barra de navegación superior */}
@@ -104,13 +112,13 @@ function Inicio() {
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button className='buttonGrid'>
+            <button className='buttonGrid' onClick={irConvertibles}>
               <img src={convertible} alt="Convertible" className="img-fluid custom-image" />
               <p className='textGrid'>Convertible</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button className='buttonGrid'>
+            <button className='buttonGrid' onClick={irHatchbacks}>
               <img src={hatchback} alt="Hatchback" className="img-fluid custom-image" />
               <p className='textGrid'>Hatchback</p>
             </button>

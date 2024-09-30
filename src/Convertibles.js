@@ -1,49 +1,47 @@
 import React from "react";
 import BarraSuperior from "./BarraSuperior";
 import BarraInferior from "./BarraInferior";
-import AudiQ5 from "./imagenes/Audi-Q5.jpg"
-import BMWX5 from "./imagenes/BMW-X5.png"
-import MercedesBenzGLC from "./imagenes/Mercedez-Benz-GLC.jpg"
-import ToyotaRav4 from "./imagenes/Toyota-RAV4.png"
-import HondaCRV from "./imagenes/Honda-CR-V.jpg"
-import NissanRogue from "./imagenes/Nissan-Rogue.jpg"
-import KiaSorento from "./imagenes/Kia-Sorento.png"
-import HyundaiTucson from "./imagenes/Hyundai-Tucson.jpg"
-import ChevroletEquinox from "./imagenes/Chevrolet-Equinox.avif"
-import MazdaCX5 from "./imagenes/Mazda-CX-5.png"
-import VolkswagenTiguan from "./imagenes/Volkswage-Tiguan.jpg"
-import LexusRX from "./imagenes/Lexus-RX.png"
+import AudiA5Cabriolet from "./imagenes/Audi-A5-Cabriolet.avif"
+import BMWZ4Roadster from "./imagenes/BMW-Z4-Roadster.webp"
+import MercedesBenzSLRoadster from "./imagenes/Mercedez-Benz-SL-Roadster.jpg.png"
+import Porsche718Boxster from "./imagenes/Porsche-718-Boxster.webp"
+import MiniCooperSConvertible from "./imagenes/Mini-Cooper-S-Convertible.png"
+import LamborghiniHuracanEVOSpyder from "./imagenes/Lamborghini-Huracan-EVO.avif"
+import ChevroletCorvetteStingrayConvertible from "./imagenes/Chevrolet-Corvette.avif"
+import JaguarFTypeConvertible from "./imagenes/Jaguar-F-Type.avif"
+import FordMustangConvertible from "./imagenes/Ford-Mustang-Convertible.jpeg"
+import McLaren720SSpider from "./imagenes/McLaren-720S-Spider.jpg"
+import Ferrari488Spider from "./imagenes/Ferrari-488-Spider.png"
+import BentleyContinentalGTConvertible from "./imagenes/Bentley-Continental-GT-Convertible.jpg"
 
-const suvs = [
-  { id: 1, marca: "Audi", modelo: "Q5 2024", imagen: AudiQ5 },
-  { id: 2, marca: "BMW", modelo: "X5 2024", imagen: BMWX5 },
-  { id: 3, marca: "Mercedes-Benz", modelo: "GLC 2024", imagen: MercedesBenzGLC },
-  { id: 4, marca: "Toyota", modelo: "RAV4 2024", imagen: ToyotaRav4 },
-  { id: 5, marca: "Honda", modelo: "CR-V 2024", imagen: HondaCRV },
-  { id: 6, marca: "Nissan", modelo: "Rogue 2024", imagen: NissanRogue },
-  { id: 7, marca: "Kia", modelo: "Sorento 2024", imagen: KiaSorento },
-  { id: 8, marca: "Hyundai", modelo: "Tucson 2024", imagen: HyundaiTucson },
-  { id: 9, marca: "Chevrolet", modelo: "Equinox 2024", imagen: ChevroletEquinox },
-  { id: 10, marca: "Mazda", modelo: "CX-5 2024", imagen: MazdaCX5 },
-  { id: 11, marca: "Volkswagen", modelo: "Tiguan 2024", imagen: VolkswagenTiguan },
-  { id: 12, marca: "Lexus", modelo: "RX 2024", imagen: LexusRX }
+const convertibles = [
+  { id: 1, marca: "Audi", modelo: "A5 Cabriolet 2024", imagen: AudiA5Cabriolet },
+  { id: 2, marca: "BMW", modelo: "Z4 Roadster 2024", imagen: BMWZ4Roadster },
+  { id: 3, marca: "Mercedes-Benz", modelo: "SL Roadster 2024", imagen: MercedesBenzSLRoadster },
+  { id: 4, marca: "Porsche", modelo: "718 Boxster 2024", imagen: Porsche718Boxster },
+  { id: 5, marca: "Mini", modelo: "Cooper S Convertible 2024", imagen: MiniCooperSConvertible },
+  { id: 6, marca: "Lamborghini", modelo: "Huracán EVO Spyder 2024", imagen: LamborghiniHuracanEVOSpyder },
+  { id: 7, marca: "Chevrolet", modelo: "Corvette Stingray Convertible 2024", imagen: ChevroletCorvetteStingrayConvertible },
+  { id: 8, marca: "Jaguar", modelo: "F-Type Convertible 2024", imagen: JaguarFTypeConvertible },
+  { id: 9, marca: "Ford", modelo: "Mustang Convertible 2024", imagen: FordMustangConvertible },
+  { id: 10, marca: "McLaren", modelo: "720S Spider 2024", imagen: McLaren720SSpider },
+  { id: 11, marca: "Ferrari", modelo: "488 Spider 2024", imagen: Ferrari488Spider },
+  { id: 12, marca: "Bentley", modelo: "Continental GT Convertible 2024", imagen: BentleyContinentalGTConvertible }
 ];
-  
-  
 
-function SUVs() {
+function Convertibles() {
     return (
       <div className="screen">
         <BarraSuperior/>
-        <div className="text-tittle">SUVs</div>
+        <div className="text-tittle">Convertibles</div>
         <div className="div-principal">
           <div className="grid-container">
-            {suvs.map((suv) => (
-              <div key={suv.id} className="pickup-card">
-                <img src={suv.imagen} alt={`${suv.marca} ${suv.modelo}`} className="pickup-image" />
+            {convertibles.map((convertible) => (
+              <div key={convertible.id} className="pickup-card">
+                <img src={convertible.imagen} alt={`${convertible.marca} ${convertible.modelo}`} className="pickup-image" />
                 <div className="pickup-info">
-                  <h3>{suv.marca}</h3>
-                  <p>{suv.modelo}</p>
+                  <h3>{convertible.marca}</h3>
+                  <p>{convertible.modelo}</p>
                   <button className="view-button">Ver</button>
                 </div>
               </div>
@@ -55,4 +53,4 @@ function SUVs() {
     );
   }
 
-export default SUVs;
+export default Convertibles;

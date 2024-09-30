@@ -25,6 +25,8 @@ import Pickups from './Pickups';
 import Sedans from './Sedan';
 import SUVs from './SUVs';
 import Coupes from './Coupes';
+import Convertibles from './Convertibles';
+import Hatchbacks from './Hatchbacks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -53,6 +55,8 @@ root.render(
         <Route path="/Sedans" element={<Sedans />} />
         <Route path="/SUVs" element={<SUVs />} />
         <Route path="/Coupes" element={<Coupes />} />
+        <Route path="/Convertibles" element={<Convertibles />} />
+        <Route path="/Hatchbacks" element={<Hatchbacks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
