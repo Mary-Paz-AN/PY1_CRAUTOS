@@ -21,6 +21,9 @@ import CrearAnuncioParteTres from './CrearAnuncioParteTres';
 import ConfirmacionEnvio from './ConfirmacionAnuncioCreado';
 import MiCuenta from './MiCuenta';
 import Pickups from './Pickups';
+import Sedans from './Sedan';
+import SUVs from './SUVs';
+import Coupes from './Coupes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,6 +48,9 @@ root.render(
         <Route path="/ConfirmacionEnvio" element={<ConfirmacionEnvio />} />
         <Route path="/MiCuenta" element={<MiCuenta />} />
         <Route path="/Pickups" element={<Pickups />} />
+        <Route path="/Sedans" element={<Sedans />} />
+        <Route path="/SUVs" element={<SUVs />} />
+        <Route path="/Coupes" element={<Coupes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

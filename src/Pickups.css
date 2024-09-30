@@ -65,3 +65,9 @@
     font-weight: 700 !important;
     font-style: normal !important;
   }
+
+  @media (max-width: 1000px){
+    .grid-container {
+      width: 90%;
+    }
+  }

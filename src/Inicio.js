@@ -25,6 +25,18 @@ function Inicio() {
     navigate("/Pickups");
   }
 
+  const irSedans = () => {
+    navigate("/Sedans");
+  }
+
+  const irSUVs = () => {
+    navigate("/SUVs");
+  }
+
+  const irCoupes = () => {
+    navigate("/Coupes")
+  }
+
   return (
     <div>
       {/* Barra de navegación superior */}
@@ -66,13 +78,13 @@ function Inicio() {
         <h2 className="text-center">Tipos de Carrocería</h2>
         <Row className="justify-content-center">
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button className='buttonGrid'>
+            <button className='buttonGrid' onClick={irSedans}>
               <img src={sedan} alt="Sedán" className="img-fluid custom-image" />
               <p className='textGrid'>Sedán</p>
             </button>
           </Col>
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button className='buttonGrid'>
+            <button className='buttonGrid' onClick={irSUVs}>
               <img src={suv} alt="SUV" className="img-fluid custom-image" />
               <p className='textGrid'>SUV</p>
             </button>
@@ -86,7 +98,7 @@ function Inicio() {
         </Row>
         <Row className="justify-content-center">
           <Col xs={12} sm={6} md={4} className="text-center mb-4">
-            <button className='buttonGrid'>
+            <button className='buttonGrid' onClick={irCoupes}>
               <img src={coupe} alt="Coupe" className="img-fluid custom-image" />
               <p className='textGrid'>Coupe</p>
             </button>
