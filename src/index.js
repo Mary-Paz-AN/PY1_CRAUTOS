@@ -11,7 +11,6 @@ import FiltradoAudiUsados from "./filtradoAudiUsados";
 import AutosOferta from "./autosOfertas";
 import AutosPremium from "./autosPremium";
 import AutosPremiumMostrar from './autosPremiumMostrar';
-import Bluebook from './Bluebook';
 import Inicio from './Inicio';
 import Contactenos from './Contactenos';
 import Registrarse from './Registrarse';
@@ -27,6 +26,7 @@ import SUVs from './SUVs';
 import Coupes from './Coupes';
 import Convertibles from './Convertibles';
 import Hatchbacks from './Hatchbacks';
+import LibroAzul from './LibroAzul';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,7 +42,6 @@ root.render(
         <Route path="/AutosOferta" element={<AutosOferta />} />
         <Route path="/AutosPremium" element={<AutosPremium />} />
         <Route path="/AutosPremiumMostrar" element={<AutosPremiumMostrar />} />
-        <Route path="/Bluebook" element={<Bluebook />} />
         <Route path="/Contactenos" element={<Contactenos />} />
         <Route path="/Registrarse" element={<Registrarse />} />
         <Route path="/Ingresar" element={<Ingresar />} />
@@ -57,6 +56,7 @@ root.render(
         <Route path="/Coupes" element={<Coupes />} />
         <Route path="/Convertibles" element={<Convertibles />} />
         <Route path="/Hatchbacks" element={<Hatchbacks />} />
+        <Route path="/LibroAzul" element={<LibroAzul />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

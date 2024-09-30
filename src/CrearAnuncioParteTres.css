@@ -69,6 +69,7 @@
     font-family: "Roboto", sans-serif !important;
     font-weight: 400 !important;
     font-style: normal !important;
+    
   }
   
   .btn-enviar {
@@ -89,6 +90,12 @@
 
   btn-enviar:hover{
     transform: scale(1.1);
+  }
+
+  .checkbox-terms{
+    width: min-content;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   /* Estilos base del checkbox */

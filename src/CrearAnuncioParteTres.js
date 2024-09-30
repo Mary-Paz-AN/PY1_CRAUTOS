@@ -100,6 +100,7 @@ function CrearAnuncioParteTres() {
                 type="checkbox"
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
+                className="checkbox-terms"
               />{" "}
               Acepto los términos y condiciones
             </label>

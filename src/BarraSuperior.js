@@ -51,6 +51,10 @@ function BarraSuperior() {
     navigate('/Ingresar');
   };
 
+  const irLibroAzul = () => {
+    navigate("/LibroAzul")
+  }
+
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
@@ -65,7 +69,7 @@ function BarraSuperior() {
             <Nav.Link onClick={irAutosNuevos} className="nav-link">Autos Nuevos</Nav.Link>
             <Nav.Link onClick={irAutosUsados} className="nav-link">Autos Usados</Nav.Link>
             <Nav.Link onClick={irAutosPremium} className="nav-link">Usados Premium</Nav.Link>
-            <Nav.Link onClick={irBluebook} className="nav-link">Libro Azul</Nav.Link>
+            <Nav.Link onClick={irLibroAzul} className="nav-link">Libro Azul</Nav.Link>
             <p className="nav-link">{isSmallScreen ? '⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯' : '|'}</p> {/* Aquí cambia el símbolo */}
             <Nav.Link onClick={irContactenos} className="nav-link">Contáctenos</Nav.Link>
             <Nav.Link onClick={irRegistrarse} className="nav-link">Registrarse</Nav.Link>
