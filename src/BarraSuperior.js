@@ -35,10 +35,6 @@ function BarraSuperior() {
     navigate('/AutosPremium');
   };
 
-  const irBluebook = () => {
-    navigate('/Bluebook');
-  };
-
   const irContactenos = () => {
     navigate('/Contactenos');
   };
